@@ -1,0 +1,4 @@
+#############  VISUALIZACIÓN DE DATOS  #############
+
+DESCRIPCIÓN       IP        MASK  VLAN    
+CP LTE CLARO  10.227.224.98  30    532

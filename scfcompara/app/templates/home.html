@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div form scf>
+        <form method="post"  enctype="multipart/form-data">
+        {% csrf_token %}
+        <input type="file" name="myfile">
+        <input type="file" name="myfile2">
+        <button type="submit">Subir Archivo</button>
+        <button type="reset" >Limpiar</button>
+    </form> <!--class="form-signin"-->
+    </div>
+    <div style="float:left;">
+        <table>
+            <tr>
+                <th>DESCRIPCIÓN</th>
+                <th>IP</th>
+                <th>MASK</th>
+                <th>VLAN</th>
+                <th>DESCRIPCIÓN</th>
+                <th>IP</th>
+                <th>MASK</th>
+                <th>VLAN</th>
+            </tr>
+
+            <tr>
+                <td>{{info.TECNO0}}</td>
+                <td>{{info.IP0}}</td>
+                <td>{{info.MASK0}}</td>
+                <td>{{info.VLAN0}}</td>
+
+                <td>{{info2.TECNO0}}</td>
+                <td>{{info2.IP0}}</td>
+                <td>{{info2.MASK0}}</td>
+                <td>{{info2.VLAN0}}</td>
+            </tr>
+    
+            <tr>
+                <td>{{info.TECNO1}}</td>
+                <td>{{info.IP1}}</td>
+                <td>{{info.MASK1}}</td>
+                <td>{{info.VLAN1}}</td>
+
+                <td>{{info2.TECNO1}}</td>
+                <td>{{info2.IP1}}</td>
+                <td>{{info2.MASK1}}</td>
+                <td>{{info2.VLAN1}}</td>
+            </tr>
+    
+            <tr>
+                <td>{{info.TECNO2}}</td>
+                <td>{{info.IP2}}</td>
+                <td>{{info.MASK2}}</td>
+                <td>{{info.VLAN2}}</td>
+            
+                <td>{{info2.TECNO2}}</td>
+                <td>{{info2.IP2}}</td>
+                <td>{{info2.MASK2}}</td>
+                <td>{{info2.VLAN2}}</td>
+            </tr>
+    
+            <tr>
+                <td>{{info.TECNO3}}</td>
+                <td>{{info.IP3}}</td>
+                <td>{{info.MASK3}}</td>
+                <td>{{info.VLAN3}}</td>
+
+                <td>{{info2.TECNO3}}</td>
+                <td>{{info2.IP3}}</td>
+                <td>{{info2.MASK3}}</td>
+                <td>{{info2.VLAN3}}</td>
+            </tr>    
+
+            <tr>
+                <td>{{info.TECNO4}}</td>
+                <td>{{info.IP4}}</td>
+                <td>{{info.MASK4}}</td>
+                <td>{{info.VLAN4}}</td>
+            
+                <td>{{info2.TECNO4}}</td>
+                <td>{{info2.IP4}}</td>
+                <td>{{info2.MASK4}}</td>
+                <td>{{info2.VLAN4}}</td>
+            </tr>
+    
+            <tr>
+                <td>{{info.TECNO5}}</td>
+                <td>{{info.IP5}}</td>
+                <td>{{info.MASK5}}</td>
+                <td>{{info.VLAN5}}</td>
+
+                <td>{{info2.TECNO5}}</td>
+                <td>{{info2.IP5}}</td>
+                <td>{{info2.MASK5}}</td>
+                <td>{{info2.VLAN5}}</td>
+            </tr>
+    
+            <tr>
+                <td>{{info.TECNO6}}</td>
+                <td>{{info.IP6}}</td>
+                <td>{{info.MASK6}}</td>
+                <td>{{info.VLAN6}}</td>
+                
+                <td>{{info2.TECNO6}}</td>
+                <td>{{info2.IP6}}</td>
+                <td>{{info2.MASK6}}</td>
+                <td>{{info2.VLAN6}}</td>
+            </tr>
+            
+            <tr>
+                <td>{{info.TECNO7}}</td>
+                <td>{{info.IP7}}</td>
+                <td>{{info.MASK7}}</td>
+                <td>{{info.VLAN7}}</td>
+
+                <td>{{info2.TECNO7}}</td>
+                <td>{{info2.IP7}}</td>
+                <td>{{info2.MASK7}}</td>
+                <td>{{info2.VLAN7}}</td>
+            </tr>
+
+            <tr>
+                <td>{{info.TECNO8}}</td>
+                <td>{{info.IP8}}</td>
+                <td>{{info.MASK8}}</td>
+                <td>{{info.VLAN8}}</td>
+
+                <td>{{info2.TECNO8}}</td>
+                <td>{{info2.IP8}}</td>
+                <td>{{info2.MASK8}}</td>
+                <td>{{info2.VLAN8}}</td>
+            </tr>
+
+            <tr>
+                <td>{{info.TECNO9}}</td>
+                <td>{{info.IP9}}</td>
+                <td>{{info.MASK9}}</td>
+                <td>{{info.VLAN9}}</td>
+
+                <td>{{info2.TECNO9}}</td>
+                <td>{{info2.IP9}}</td>
+                <td>{{info2.MASK9}}</td>
+                <td>{{info2.VLAN9}}</td>
+            </tr>
+
+            
+            <tr>
+                <td>{{info.TECNO10}}</td>
+                <td>{{info.IP10}}</td>
+                <td>{{info.MASK10}}</td>
+                <td>{{info.VLAN10}}</td>
+
+                <td>{{info2.TECNO10}}</td>
+                <td>{{info2.IP10}}</td>
+                <td>{{info2.MASK10}}</td>
+                <td>{{info2.VLAN10}}</td>
+            </tr>
+        <br>
+            <tr>
+                <td>{{port.PORT0}}</td>
+                <td>{{port.STATE0}}</td>
+                <td>{{port.SPEED0}}</td>
+                <td>{{port2.PORT0}}</td>
+                <td>{{port2.STATE0}}</td>
+                <td>{{port2.SPEED0}}</td>
+            </tr>
+
+            <tr>
+                <td>{{port.PORT1}}</td>
+                <td>{{port.STATE1}}</td>
+                <td>{{port.SPEED1}}</td>
+                <td>{{port2.PORT1}}</td>
+                <td>{{port2.STATE1}}</td>
+                <td>{{port2.SPEED1}}</td>
+            </tr>
+
+            <tr>
+                <td>{{port.PORT2}}</td>
+                <td>{{port.STATE2}}</td>
+                <td>{{port.SPEED2}}</td>
+                <td>{{port2.PORT2}}</td>
+                <td>{{port2.STATE2}}</td>
+                <td>{{port2.SPEED2}}</td>
+            </tr>
+
+            <tr>
+                <td>{{port.PORT3}}</td>
+                <td>{{port.STATE3}}</td>
+                <td>{{port.SPEED3}}</td>
+                <td>{{port2.PORT3}}</td>
+                <td>{{port2.STATE3}}</td>
+                <td>{{port2.SPEED3}}</td>
+            </tr>
+
+    </table>
+        </div>
+
+
+        
+<!--
+    <div style="float:left; position: absolute; left: 400px;">
+        <table>
+            <tr>
+                <th>DESCRIPCIÓN</th>
+                <th>IP</th>
+                <th>MASK</th>
+                <th>VLAN</th>
+            </tr>
+    
+            <tr>
+                <td>{{info2.TECNO0}}</td>
+                <td>{{info2.IP0}}</td>
+                <td>{{info2.MASK0}}</td>
+                <td>{{info2.VLAN0}}</td>
+            </tr>
+    
+            <tr>
+                <td>{{info2.TECNO1}}</td>
+                <td>{{info2.IP1}}</td>
+                <td>{{info2.MASK1}}</td>
+                <td>{{info2.VLAN1}}</td>
+            </tr>
+    
+
+
+        </table>
+    </div>
+
+        <br>
+        <tr><td>PUERTOS CONFIGURADOS:</td>   
+        <tr><td></td><td>{{port.0}}</td><td>{{port2.0}}</td></tr>
+        <tr><td></td><td>{{port.1}}</td><td>{{port2.1}}</td></tr>
+        <tr><td></td><td>{{port.2}}</td><td>{{port2.2}}</td></tr>
+        <tr><td></td><td>{{port.3}}</td><td>{{port2.3}}</td></tr>
+        <tr><td></td><td>{{port.4}}</td><td>{{port2.4}}</td></tr>
+        <tr><td></td><td>{{port.5}}</td><td>{{port2.5}}</td></tr>
+        <tr><td></td><td>{{port.6}}</td><td>{{port2.6}}</td></tr>
+        <tr><td></td><td>{{port.7}}</td><td>{{port2.7}}</td></tr>
+        <tr><td></td><td>{{port.8}}</td><td>{{port2.8}}</td></tr>
+        <tr><td></td><td>{{port.9}}</td><td>{{port2.9}}</td></tr>
+        <tr><td>VLAN CONFIGURADAS:</td>
+        </td><td>{% for i in vlan %}{{i}} {% endfor %}<br>
+        </td><td>{% for i in vlan2 %}{{i}} {% endfor %}<br></td></tr>
+        <tr><td>L2 QoS</td><td>{{qos.qos}}</td><td>{{qos2.qos}}</td></tr>
+        <tr><td>L2 SwitchingEnabled</td><td>{{qos.l2}}</td><td>{{qos2.l2}}</td></tr>
+
+    -->
+</body>
+</html>

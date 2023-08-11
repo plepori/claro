@@ -1,0 +1,29 @@
+Info util para iniciar proyecto
+crear entorno virtual                           python -m venv scfcompara-env
+activar virtual env                             scfcompara -env\Scripts\activate.bat            #windows
+                                                source scfcompara-env/Scripts/activate          #linux
+desactivar                                      deactivate
+python -m pip show                              mostrará información de un paquete en particular
+python -m pip list                              mostrará todos los paquetes instalados en el entorno virtual
+python -m pip install -r requirements.txt       requeriment.txt archivo con programas a instalar
+
+django-admin startproject scfcompara            crea proyecto en django
+django-admin startapp app                       crea la app que vamos a realizar
+
+
+Información del proyecto:
+
+Terminal con Gitbash con pwd buscamos donde nos encontramos. Ingresamos a la carpeta de la app y ejecutamos los siguientes comandos
+py manage.py runserver                          ejecuto el servidor
+localhost:8000 o 127.0.0.1:8000                 ingreso a la pag                                     
+
+Github
+subir desde vscode
+
+echo "# claro_app" >> README.md
+git init
+git add .
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/plepori/claro_app.git
+git push -u origin main
