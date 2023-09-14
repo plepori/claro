@@ -31,10 +31,12 @@ class home(View):
         scf = datos(plan)
         info = scf.ipif()
         port = scf.puertos()
+        qos = scf.calidad()
 
         scf2 = datos(plan2)
         info2 = scf2.ipif()
         port2 = scf2.puertos()
+        qos2 = scf2.calidad()
 
         
-        return render(request, "home.html", {"info":info, "info2":info2, "port":port, "port2":port2})
+        return render(request, "home.html", {"info":info, "info2":info2, "port":port, "port2":port2, "qos":qos, "qos2":qos2})

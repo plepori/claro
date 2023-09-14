@@ -5,8 +5,14 @@ class datos:
         self.dic = {}
         self.i = 0
         self.flag = 1
-        self.port = {} 
+        self.port = {}
     
+    def calidad(self):
+            qos = {}
+            #a = self.plan.find_all(class_="com.nokia.srbts.tnl:L2SWI")
+            qos['qos'] = self.plan.find("p",{"name":"l2QoSEnabled"}).getText()
+            qos['l2'] = self.plan.find("p",{"name":"l2SwitchingEnabled"}).getText()
+            return qos
 
     def buscar_puerto(self,var):
         
