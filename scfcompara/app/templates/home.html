@@ -32,7 +32,6 @@
             <th class="col-md-2">PUERTO TX</th>
             <th class="col-md-2">ESTADO PUERTO</th>
             <th class="col-md-2">VELOCIDAD PUERTO TX</th>
-            
           </tr>
           <tr class="text-center">
             <td>{{port.PORT0}}</td>
@@ -43,7 +42,7 @@
             <td class="vel_puerto2">{{port2.SPEED0}}</td>
           </tr>
 
-          <tr>
+          <tr class="text-center">
             <td>{{port.PORT1}}</td>
             <td>{{port.STATE1}}</td>
             <td class="vel_puerto1">{{port.SPEED1}}</td>
@@ -52,7 +51,7 @@
             <td class="vel_puerto2">{{port2.SPEED1}}</td>
           </tr>
 
-          <tr>
+          <tr class="text-center">
             <td>{{port.PORT2}}</td>
             <td>{{port.STATE2}}</td>
             <td class="vel_puerto1">{{port.SPEED2}}</td>
@@ -61,7 +60,7 @@
             <td class="vel_puerto2">{{port2.SPEED2}}</td>
           </tr>
 
-          <tr>
+          <tr class="text-center">
             <td>{{port.PORT3}}</td>
             <td>{{port.STATE3}}</td>
             <td class="vel_puerto1">{{port.SPEED3}}</td>
@@ -72,9 +71,19 @@
           <tr>
           </table>
 
-          <table>
-          <tr><td>L2 QoS</td><td>{{qos.qos}}</td><td>{{qos2.qos}}</td></tr>
-          <tr><td>L2 SwitchingEnabled</td><td>{{qos.l2}}</td><td>{{qos2.l2}}</td></tr>
+          <table  class="mt-3 table table-success table-striped">
+          <tr class="text-center">
+            <th>L2 QoS</th>
+            <th>L2 Switching Enabled</th>
+            <th>L2 QoS</th>
+            <th>L2 Switching Enabled</th>
+          </tr>
+          <tr class="text-center">
+            <td>{{qos.qos}}</td>
+            <td>{{qos.l2}}</td>
+            <td>{{qos2.qos}}</td>
+            <td>{{qos2.l2}}</td>
+          </tr>
           </table>
 
           <table class="table table-success table-striped">
