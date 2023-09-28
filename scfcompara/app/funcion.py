@@ -6,7 +6,20 @@ class datos:
         self.i = 0
         self.flag = 1
         self.port = {}
+        self.var_alarm = []
     
+    def alarm(self,i):
+        var = i.find("p",{"name":"descr"}).getText()
+        self.var_alarm.append(var)
+
+    def alarmas(self):
+        [self.alarm(i) for i in self.plan.find_all(class_="com.nokia.srbts.eqm:EAC_IN")]
+        return self.var_alarm
+
+    def cellid(self):
+        cid = self.plan.find("p",{"name":"btsName"}).getText()
+        return cid 
+
     def calidad(self):
             qos = {}
             #a = self.plan.find_all(class_="com.nokia.srbts.tnl:L2SWI")

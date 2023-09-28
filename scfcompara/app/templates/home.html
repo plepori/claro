@@ -24,7 +24,7 @@
         </form>
       </section>
       <section>
-        <table class="mt-3 table table-success table-striped">
+        <table class="mt-3 table table-success">
           <tr class="container text-center">
             <th class="col-md-2">PUERTO TX</th>
             <th class="col-md-2">ESTADO PUERTO TX</th>
@@ -45,48 +45,48 @@
           <tr class="text-center">
             <td>{{port.PORT1}}</td>
             <td>{{port.STATE1}}</td>
-            <td class="vel_puerto1">{{port.SPEED1}}</td>
+            <td class="vel_puerto3">{{port.SPEED1}}</td>
             <td>{{port2.PORT1}}</td>
             <td>{{port2.STATE1}}</td>
-            <td class="vel_puerto2">{{port2.SPEED1}}</td>
+            <td class="vel_puerto4">{{port2.SPEED1}}</td>
           </tr>
 
           <tr class="text-center">
             <td>{{port.PORT2}}</td>
             <td>{{port.STATE2}}</td>
-            <td class="vel_puerto1">{{port.SPEED2}}</td>
+            <td class="vel_puerto5">{{port.SPEED2}}</td>
             <td>{{port2.PORT2}}</td>
             <td>{{port2.STATE2}}</td>
-            <td class="vel_puerto2">{{port2.SPEED2}}</td>
+            <td class="vel_puerto6">{{port2.SPEED2}}</td>
           </tr>
 
           <tr class="text-center">
             <td>{{port.PORT3}}</td>
             <td>{{port.STATE3}}</td>
-            <td class="vel_puerto1">{{port.SPEED3}}</td>
+            <td class="vel_puerto7">{{port.SPEED3}}</td>
             <td>{{port2.PORT3}}</td>
             <td>{{port2.STATE3}}</td>
-            <td class="vel_puerto2">{{port2.SPEED3}}</td>
+            <td class="vel_puerto8">{{port2.SPEED3}}</td>
           </tr>
           <tr>
           </table>
 
-          <table  class="mt-3 table table-success table-striped">
+          <table  class="mt-3 table table-success">
           <tr class="text-center">
             <th>L2 QoS</th>
             <th>L2 Switching Enabled</th>
             <th>L2 QoS</th>
             <th>L2 Switching Enabled</th>
           </tr>
-          <tr class="text-center">
-            <td>{{qos.qos}}</td>
-            <td>{{qos.l2}}</td>
-            <td>{{qos2.qos}}</td>
-            <td>{{qos2.l2}}</td>
+          <tr class="col text-center">
+            <td class="l2_qos1">{{qos.qos}}</td>
+            <td class="switching_enabled1">{{qos.l2}}</td>
+            <td class="l2_qos2">{{qos2.qos}}</td>
+            <td class="switching_enabled2">{{qos2.l2}}</td>
           </tr>
           </table>
 
-          <table class="table table-success table-striped">
+          <table class="table table-success">
             <th>DESCRIPCIÓN</th>
             <th>IP</th>
             <th>MASK</th>
